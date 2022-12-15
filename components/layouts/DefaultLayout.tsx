@@ -1,15 +1,18 @@
+
+
 import Header from "../header"
-import {SaidbarState} from '../../store/contexts/SaidbarContext'
+import {saidebarStatus} from "../../store/saidebarStatus"
 
 export default function DefaultLayout({children}) {
+
+  const TogleSaidbar = saidebarStatus()
+
   return (
     <>
-    <SaidbarState >
-      <Header />
-      <div>
+      <Header props={TogleSaidbar} />
+      <div onClick={() => TogleSaidbar.Hide()} className="h-screen">
         {children}
       </div>
-    </SaidbarState>
     </>
   )
 }
