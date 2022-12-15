@@ -21,7 +21,7 @@ export const SaidbarState = ({children}) => {
   }
 
   return (
-    <SaidbarContext.Provider value={{state, Hide, Show}}>
+    <SaidbarContext.Provider value={{state, hide, show}}>
       {children}
     </SaidbarContext.Provider>
   )
