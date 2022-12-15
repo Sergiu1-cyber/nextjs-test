@@ -9,10 +9,16 @@ export default function DefaultLayout({children}) {
 
   return (
     <>
-      <Header props={TogleSaidbar} />
-      <div onClick={() => TogleSaidbar.Hide()} className="h-screen">
+      <Header 
+        props={TogleSaidbar} />
+
+      <div 
+        onClick={
+        () => TogleSaidbar.Hide()} 
+        className="h-screen">
         {children}
-      </div>
-    </>
+        </div>
+
+      </>
   )
 }
