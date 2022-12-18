@@ -1,4 +1,5 @@
 import {ITogeSaidbar} from "../../types/ITogleSaidbar"
+import {MenuIcon} from "./menu_icon"
 import Saidbar from "./saidbar"
 
 interface IProps {
@@ -9,20 +10,15 @@ export default function Header({props}: IProps) {
 
   return (
     <div 
-      className="bg-emerald-400 py-2">
+      className="flex bg-emerald-400 py-2">
 
       {props.visible && 
         <Saidbar 
           props={props} />}
 
-      <button 
-        className="px-4" 
-        onClick={
-          () => props.Show()}>
-        @</button>
+      <MenuIcon props={props}/>
 
       <h1>Header</h1>
-
       </div>
   )
 }

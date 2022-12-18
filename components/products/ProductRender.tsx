@@ -12,8 +12,8 @@ export default function ProductRender({product}: IProps) {
       <h1>{product.title}</h1>
       <Image 
         src={product.image} 
-        width={400}
-        height={400}
+        width={300}
+        height={300}
         alt="img"/>
       <p>{product.description}</p>
     </div>

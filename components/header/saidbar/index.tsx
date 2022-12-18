@@ -20,7 +20,11 @@ export default function Saidbar({props}: IProps) {
         href={link.href} 
         onClick={
           () => props.Hide()} 
-        key={link.href}>
+        key={link.href}
+        className="
+          bg-emerald-500
+          mt-2
+        ">
         {link.title}
         </Link>)
 
@@ -28,13 +32,14 @@ export default function Saidbar({props}: IProps) {
     <div 
       className="
         flex flex-col 
-        absolute 
+        absolute text-center
         h-screen w-1/4 
         bg-emerald-400">
 
       <button 
         onClick={
-          () => props.Hide()} >
+          () => props.Hide()} 
+        className="bg-emerald-600">
         close
         </button>
 
