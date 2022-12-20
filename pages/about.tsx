@@ -9,7 +9,7 @@ export default function About({posts}: IProps) {
   return (
     <div>
       <h1>Abut Page</h1>
-      { posts && posts.length && posts.map( (post) => (<h1>{post.title}</h1>) ) }
+      {  }
     </div>
   );
 }
