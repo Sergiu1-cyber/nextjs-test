@@ -5,11 +5,13 @@ interface IProps {
   posts: IPost[]
 }
 
-export default function About({posts}: IProps) {
+export default function About({posts}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div>
       <h1>Abut Page</h1>
-      {  }
+      {posts && posts.map(
+        post => (<h1 key={post.id}>{post.title}</h1>)
+      )}
     </div>
   );
 }
