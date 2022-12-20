@@ -1,6 +1,5 @@
-
 export interface ITogeSaidbar {
-  visible: boolean 
-  Hide: () => void 
-  Show: () => void
+  visible: boolean;
+  Hide: () => void;
+  Show: () => void;
 }

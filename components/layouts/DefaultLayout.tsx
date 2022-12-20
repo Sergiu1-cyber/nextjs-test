@@ -1,24 +1,16 @@
+import Header from '../header';
+import { saidebarStatus } from '../../store/saidebarStatus';
 
-
-import Header from "../header"
-import {saidebarStatus} from "../../store/saidebarStatus"
-
-export default function DefaultLayout({children}) {
-
-  const TogleSaidbar = saidebarStatus()
+export default function DefaultLayout({ children }) {
+  const TogleSaidbar = saidebarStatus();
 
   return (
     <>
-      <Header 
-        props={TogleSaidbar} />
+      <Header props={TogleSaidbar} />
 
-      <div 
-        onClick={
-        () => TogleSaidbar.Hide()} 
-        className="h-screen">
+      <div onClick={() => TogleSaidbar.Hide()} className="h-screen">
         {children}
-        </div>
-
-      </>
-  )
+      </div>
+    </>
+  );
 }
