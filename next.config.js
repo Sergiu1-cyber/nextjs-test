@@ -10,6 +10,11 @@ const nextConfig = {
         hostname: 'fakestoreapi.com',
         pathname: '/img/**',
       },
+      {
+        protocol: 'https',
+        hostname: 'drive.google.com',
+        pathname: '/**',
+      },
     ],
   },
 }
