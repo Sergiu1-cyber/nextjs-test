@@ -1,14 +1,14 @@
 import Image from "next/image";
+import Img from "../public/img.jpg"
 
 export default function Home() {
   return (
     <div>
       <h1 className="text-red-500">Home Page</h1>
       <Image 
-        src="https://drive.google.com/uc?id=1-i0e6dwq5MbjzHdDIxRLipib_b28v0Fh" 
+        src={Img}
         alt="img"
-        width={100}
-        height={100}/>
+        />
     </div>
   );
 }
