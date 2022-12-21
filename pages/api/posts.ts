@@ -7,6 +7,6 @@ const posts: IPost[] = [
   {id: 3, title: "Post 3", post: "uigfe grfre ugfurge gwtgeriwgyt fuewur"}
 ]
 
-export default (req: NextApiRequest, res: NextApiResponse) => {
+export default function handler(req: NextApiRequest, res: NextApiResponse) {
   res.json(posts);
 };
